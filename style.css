@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte1: 'Passion One', sans-serif;
+    --fonte2: 'Sriracha', 'cursive';
+    --fonte3: 'Verdana', 'Geneva', Tahoma, sans-serif;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgba(128, 128, 128, 0.404);
+    font-size: 1em;
+}
+
+/* CONFIGURAÇÔES GERAIS ^^*/
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+
+header h1{
+    padding-top: 50px;
+    font-family: var(--fonte1);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header p{
+    padding-bottom: 50px;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-family: var(--fonte3);
+}
+
+header a, footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.507);
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: calc(1.02s);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 2em;
+}
+
+section>p{
+    padding-bottom: 2em;
+}
+
+section.texto{
+    background-color: white;
+    color: black;
+}
+
+section.imagem>p{
+    background-color: #00000059;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    text-shadow: 2px 2px 0 black;
+}
+
+#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img02{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+    font-family: var(--fonte3);
+}
+
+
